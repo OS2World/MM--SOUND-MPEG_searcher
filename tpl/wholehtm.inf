@@ -1,0 +1,21 @@
+@assign @fn @filename
+@assign @fs @size
+@scale @size @fs 1024 1
+@numformat @fs
+@leftpad @fs 6
+@pad @fn 12
+@assign @ptsec @playtimesec
+@leftpadch @ptsec 2 0
+@assign @ptmin @playtimemin
+@leftpadch @ptmin 2 0
+<tr>
+<td>@fn</td>
+<td>@fskb</td>
+<td>@title</td>
+<td>@artist</td>
+<td>@ptmin:@ptsec</td>
+</tr>
+@destroy @ptmin
+@destroy @ptsec
+@destroy @fn
+@destroy @fs

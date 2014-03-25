@@ -1,0 +1,30 @@
+<html>
+
+<head>
+
+  <title>Music list</title>
+
+  <style type="text/css" title="MPEG Searcher style">
+    a:link, a:visited, a:active { text-decoration: none }
+    th { font-family: "verdana", serif }
+    td { font-family: "verdana", serif }
+    h2 { font-family: "verdana", serif }
+  </style>
+
+</head>
+
+<body>
+
+<center><h2>Generated at @curyear/@curmonth/@curday @curhour:@curmin:@cursec</h2></center>
+
+<script>
+// <!--
+document.write('<table cellpadding="2" cellspacing="3" width="' + (screen.width - 33) + '">');
+// -->
+</script>
+
+<tr>
+
+<td align="center">
+
+<table bgcolor="#DEDEE7" cellpadding="2" cellspacing="3">

@@ -1,0 +1,12 @@
+
+= [ abstract ] ===============================================================
+
+                            complete list of mp3s
+
+@assign @date generated at @curyear/@curmonth/@curday @curhour:@curmin:@cursec
+@center @date 79
+@date
+@destroy @date
+
+= [ list ] ===================================================================
+

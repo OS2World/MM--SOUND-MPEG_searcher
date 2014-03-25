@@ -1,0 +1,22 @@
+================================
+         MPEG searcher
+          version 0.5
+===============================
+ This program  will find audio
+ MPEGs for you using specified
+   path, edit the tags, sort
+the list of MPEGs, and generate
+         the list using
+       various templates.
+   This program automatically
+   determines the codepage of
+     the tag (cyrillic) and
+     dynamically recodes it
+  The codepages supported are
+       866, koi8-r, 1251.
+   Sources provided, versions
+    for OS/2, DPMI32, Win32.
+================================
+  (c) 1999 by Alexander Trunov
+     2:5069/10, jnc@mail.ru
+================================

@@ -1,0 +1,6 @@
+
+@assign @line = [ @album (@year) ] =
+@padch @line 78 =
+@line
+@destroy line
+

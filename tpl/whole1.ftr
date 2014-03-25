@@ -1,0 +1,11 @@
+
+= [ totals ] =================================================================
+
+@assign @totalsize @totsize
+@scale @totalsize @totsize 1024 1
+@numformat @totalsize
+@assign @totalz total listed @totnum mpegs, @totalsizekb
+@center @totalz 79
+@totalz
+@destroy @totalz
+@destroy @totalsize

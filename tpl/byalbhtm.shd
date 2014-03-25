@@ -1,0 +1,13 @@
+<center><h2>@artist</h2></center>
+
+<script>
+// <!--
+document.write('<table cellpadding="2" cellspacing="3" width="' + (screen.width - 33) + '">');
+// -->
+</script>
+
+<tr>
+
+<td align="center">
+
+<table bgcolor="#DEDEE7" cellpadding="2" cellspacing="3">

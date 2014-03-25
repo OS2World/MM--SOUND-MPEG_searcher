@@ -1,0 +1,55 @@
+
+(c) sergey korowkin [2:5033/2700, 2:6033/27]
+
+  Users guide on FastUUE Macros Engine (FME)
+  ~~~~~ ~~~~~ ~~ ~~~~~~~ ~~~~~~ ~~~~~~ ~~~~~
+
+  1.  lines  [lists,  files,  etc]  with  FME  are  processed "from top to
+ bottom".
+
+  2.  lines  can be regular [text is replaced by regular macros] and spec-
+ ial [commands that doing something with other macros or lines]
+
+  3. regular macros by default is not determined, with exception: @nothing
+ that  replaced by nothing [@nothing -> "" (without quotes)]. Program that
+ uses  FME can make its macros, for example, @longversion -- full decript-
+ ion of the program, @version -- short version. @curhour/@curmin/@cursec -
+ current  time,  @curday/@curmonth/@curyear/@curdow/@curshortdow - current
+ date.
+
+  4.  specail  macros are determined by default and they are not often ad-
+ ded:
+
+        @assign @macro <value> - assigns to macro @macro value <value>. if
+ the  macro  @macro  was exist before that, it would be destroyed and then
+ created.
+        @destroy @macro - destroys macro @macro
+        @addb  @macro  <text>  - to the begin of the macro @macro would be
+ added the <text>
+        @addf  @macro <text> - to the end of the macro @macro would be ad-
+ ded the <text>
+        @pad  @macro  <length> - the @macro would be padded by spaces, and
+ the resulting length will be <length>
+        @padch  @macro  <length>  <char> - the same action as the previous
+ special macro, but the macro would be padded by <char>
+        @leftpad  @macro <length> - the same action as the @pad macro, but
+ the spaces will be added by left
+        @leftpadch @macro <length> <char> - refer to @padch macro
+        @copy  @macro  <start>  <len>  -  @macro  := Copy(@macro, <start>,
+ <len>)  [pascal].  the  @macro  would  contain  the string that begins at
+ <start>  and the length of the resulting string willl be <len>. string is
+ cutted from @macro.
+        @center  @macro  <len>  -  the  @macro would be centered to length
+ <len>.
+        @centerch  @macro  <len>  <char> - the @macro would be centered to
+ length <len> by using the <char>
+        @scale @macro <cur> <max> <scl> - @macro := <cur>/<max>*<scl>
+        @numformat   @macro   -   formats   the   number   (1234567890  ->
+ 1,234,567,890)
+        @convsize  @macro <len> - packs the number to the length <len> ac-
+ cording to these facts: 1) 1024b = 1K, 2) 1024K = 1M, 3) 1024M = 1G
+        @length @macro - returns the length of @macro
+
+  translated by Alexander Trunov [2:5069/10, jnc@mail.ru]
+  feel  free  to correct my curved English ;-) please send the corrections
+ to these addresses

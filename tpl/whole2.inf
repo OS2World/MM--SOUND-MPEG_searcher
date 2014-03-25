@@ -1,0 +1,9 @@
+@assign @fn @filename
+@assign @fs @size
+@scale @size @fs 1024 1
+@numformat @fs
+@leftpad @fs 6
+@pad @fn 12
+@fn @fskb  @artist - @title
+@destroy @fn
+@destroy @fs

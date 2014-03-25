@@ -1,0 +1,16 @@
+<html>
+
+<head>
+
+  <title>Music list separated by artist</title>
+
+  <style type="text/css" title="MPEG Searcher style">
+    a:link, a:visited, a:active { text-decoration: none }
+    th { font-family: "verdana", serif }
+    td { font-family: "verdana", serif }
+    h2 { font-family: "verdana", serif }
+  </style>
+
+</head>
+
+<body>

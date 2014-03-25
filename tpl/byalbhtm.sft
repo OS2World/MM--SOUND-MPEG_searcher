@@ -1,0 +1,18 @@
+
+<tr>
+@assign @ssize @subsize
+@scale @ssize @subsize 1024 1
+@numformat @ssize
+
+<td align="center" colspan="4">Total @subnum MPEGs, @ssizekb</td>
+@destroy @ssize
+
+</tr>
+
+</table>
+
+</td>
+
+</tr>
+
+</table>

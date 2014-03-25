@@ -1,0 +1,9 @@
+
+@assign @ssize @subsize
+@scale @ssize @subsize 1024 1
+@numformat @ssize
+@assign @line = [ total @subnum mpegs, @ssizekb ] =
+@padch @line 78 =
+@line
+@destroy @line
+@destroy @ssize
